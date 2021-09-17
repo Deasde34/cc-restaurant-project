@@ -1,24 +1,25 @@
 #include "Menu.hh"
 
-Menu::Menu(std::string menu, std::string dish, float price)
+Menu::Menu(std::string material, std::string crockery, int howMuch)
 {
-  this->menu = menu;
-  this->dish = dish;
-  this->price = price;
+  this->material = material;
+  this->crockery = crockery;
+  this->howMuch = howMuch;
 }
 
-Menu::~Menu(){
+Menu::~Menu()
+{
 }
 
-std::string Menu::GetMenu() const
+std::string Menu::GetMaterial() const
 {
-  return menu;
+  return material;
 }
-std::string Menu::GetDish() const
+std::string Menu::GetCrockery() const
 {
-  return dish;
+  return crockery;
 }
-float Menu::GetPrice() const
+int Menu::GetHowMuch() const
 {
-  return price;
+  return howMuch;
 }
