@@ -4,16 +4,16 @@
 
 int main()
 {
-  Menu* menu1{new Menu("Steak", "Venison Steak", 340.04)};
-  Menu* menu2{new Menu("Hamburger", "Hot Steamy Western Bacon", 149.99)};
-  Menu* menu3{new Menu("Chicken", "Teriyaki Style Chicken", 121.99)};
-  Menu* menu4{new Menu("Deluxe ", "Tomahawk Covered in 20k Karat Edible Gold", 12399.99)};
+  Menu* type1{new Menu("Plastico", "Vasos", 200)};
+  Menu* type2{new Menu("Porcelana", "Platos", 140)};
+  Menu* type3{new Menu("Metal", "Tenedores y cuchillos", 350)};
+  Menu* type4{new Menu("Vidrio ", "Copas", 150)};
 
   Stack* stack{new Stack()};
-  stack->Push(menu1);
-  stack->Push(menu2);
-  stack->Push(menu3);
-  stack->Push(menu4);
+  stack->Push(type1);
+  stack->Push(type2);
+  stack->Push(type3);
+  stack->Push(type4);
   stack->Print();
 
   stack->Pop();

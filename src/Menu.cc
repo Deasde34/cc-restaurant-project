@@ -13,7 +13,7 @@ void Stack::Pop()
 {
   if(IsEmpty())
   {
-    std::cout << "Menu is empty" << std::endl;
+    std::cout << "Crockery list is empty" << std::endl;
   }
   else
   {
@@ -52,13 +52,13 @@ void Stack::Print()
   {
     Node* current{head};
 
-    std::cout << "Game list:"<< std::endl;
+    std::cout << "Crockery List:"<< std::endl;
     std::cout << std::endl;
     while (current)
     {
-      std::cout << "Menu Name: " << current->GetMenu()->GetMenu() << std::endl;
-      std::cout << "Menu Dish: " << current->GetMenu()->GetDish() << std::endl;
-      std::cout << "Dish Price: " << current->GetMenu()->GetPrice() << std::endl;
+      std::cout << "Crockery Type: " << current->GetMenu()->GetMaterial() << std::endl;
+      std::cout << "Crockery: " << current->GetMenu()->GetCrockery() << std::endl;
+      std::cout << "Crockery Amount: " << current->GetMenu()->GetHowMuch() << std::endl;
       std::cout << std::endl;
       current = current->next;
     }

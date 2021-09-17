@@ -5,13 +5,13 @@
 class Menu
 {
 private:
-  std::string menu;
-  std::string dish;
-  float price;
+  std::string material;
+  std::string crockery;
+  int howMuch;
 public:
-  Menu(std::string menu, std::string dish,  float price);
+  Menu(std::string material, std::string crockery,  int howMuch);
   ~Menu();
-  std::string GetMenu() const;
-  std::string GetDish() const;
-  float GetPrice() const;
+  std::string GetType() const;
+  std::string GetCrockery() const;
+  int GetHowMuch() const;
 };
