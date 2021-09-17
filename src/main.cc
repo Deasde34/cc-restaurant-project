@@ -4,7 +4,7 @@
 
 int main()
 {
-  Menu* type1{new Menu("Plastic", "Vasos", 200)};
+  Menu* type1{new Menu("Plastic", "Cups", 200)};
   Menu* type2{new Menu("Porcelain", "Dishes", 140)};
   Menu* type3{new Menu("Metal", "Forks & Knifes", 350)};
   Menu* type4{new Menu("Glass ", "Wine Cups", 150)};
