@@ -4,10 +4,10 @@
 
 int main()
 {
-  Menu* type1{new Menu("Plastico", "Vasos", 200)};
-  Menu* type2{new Menu("Porcelana", "Platos", 140)};
-  Menu* type3{new Menu("Metal", "Tenedores y cuchillos", 350)};
-  Menu* type4{new Menu("Vidrio ", "Copas", 150)};
+  Menu* type1{new Menu("Plastic", "Vasos", 200)};
+  Menu* type2{new Menu("Porcelain", "Dishes", 140)};
+  Menu* type3{new Menu("Metal", "Forks & Knifes", 350)};
+  Menu* type4{new Menu("Glass ", "Wine Cups", 150)};
 
   Stack* stack{new Stack()};
   stack->Push(type1);
