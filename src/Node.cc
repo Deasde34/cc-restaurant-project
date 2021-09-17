@@ -1,12 +1,15 @@
 #include "Node.hh"
 
-Node::Node(Menu*& menu){
+Node::Node(Menu *&menu)
+{
   this->menuNode = menu;
 }
 
-Node::~Node(){
+Node::~Node()
+{
 }
 
-Menu* Node::GetMenu() const{
+Menu *Node::GetMenu() const
+{
   return menuNode;
 }
